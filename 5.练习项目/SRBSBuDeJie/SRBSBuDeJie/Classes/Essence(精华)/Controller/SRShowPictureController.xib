@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SRShowPictureController">
+            <connections>
+                <outlet property="imageView" destination="Psn-6h-t0Y" id="Vh2-bk-eUF"/>
+                <outlet property="imageViewCenterY" destination="POz-dK-1ER" id="dmr-Wh-i80"/>
+                <outlet property="imageViewHeight" destination="laG-oB-JGN" id="cvY-Bk-cTH"/>
+                <outlet property="imageViewWidth" destination="lIy-Es-gKK" id="BzJ-yg-Cs6"/>
+                <outlet property="progressView" destination="jhz-Ki-gGV" id="mtQ-Bg-XHn"/>
+                <outlet property="scrollView" destination="Wzp-12-TkB" id="I9E-Dx-j4O"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iKN-ZX-Odl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzp-12-TkB">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-6h-t0Y">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="600" id="lIy-Es-gKK"/>
+                                <constraint firstAttribute="height" constant="600" id="laG-oB-JGN"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="wgO-wE-i0g" appends="YES" id="z4f-Pb-SMR"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Psn-6h-t0Y" secondAttribute="trailing" id="5bn-Ya-SSv"/>
+                        <constraint firstItem="Psn-6h-t0Y" firstAttribute="top" secondItem="Wzp-12-TkB" secondAttribute="top" id="Lhk-pm-62X"/>
+                        <constraint firstAttribute="centerY" secondItem="Psn-6h-t0Y" secondAttribute="centerY" id="POz-dK-1ER"/>
+                        <constraint firstItem="Psn-6h-t0Y" firstAttribute="leading" secondItem="Wzp-12-TkB" secondAttribute="leading" id="Xfj-Un-Q0r"/>
+                        <constraint firstAttribute="bottom" secondItem="Psn-6h-t0Y" secondAttribute="bottom" id="wN8-fC-apB"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN3-pt-K0a" userLabel="返回">
+                    <rect key="frame" x="10" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="aJL-YA-tHZ"/>
+                        <constraint firstAttribute="height" constant="40" id="fS9-7b-jwr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="Rez-bq-e6r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXq-VH-cUP" userLabel="保存">
+                    <rect key="frame" x="10" y="550" width="70" height="30"/>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1tG-wq-OHq"/>
+                        <constraint firstAttribute="height" constant="30" id="Vzz-Tj-vTO"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="save" destination="-1" eventType="touchUpInside" id="kJF-5u-A0C"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhz-Ki-gGV" userLabel="进度条" customClass="SRProgressView">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="B63-bi-axG"/>
+                        <constraint firstAttribute="height" constant="100" id="Yrj-TL-Ud5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fXq-VH-cUP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="1z8-bv-bLa"/>
+                <constraint firstAttribute="bottom" secondItem="fXq-VH-cUP" secondAttribute="bottom" constant="20" id="8ql-gD-b0C"/>
+                <constraint firstItem="Wzp-12-TkB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E22-Hu-Di4"/>
+                <constraint firstAttribute="trailing" secondItem="Wzp-12-TkB" secondAttribute="trailing" id="Rfw-yS-AUh"/>
+                <constraint firstItem="Wzp-12-TkB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YFI-F7-vJO"/>
+                <constraint firstItem="AN3-pt-K0a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ZYI-4D-jt2"/>
+                <constraint firstAttribute="centerY" secondItem="jhz-Ki-gGV" secondAttribute="centerY" id="mTq-TC-RFs"/>
+                <constraint firstAttribute="bottom" secondItem="Wzp-12-TkB" secondAttribute="bottom" id="qXi-Nm-2y4"/>
+                <constraint firstAttribute="centerX" secondItem="jhz-Ki-gGV" secondAttribute="centerX" id="wfa-fH-yaj"/>
+                <constraint firstItem="AN3-pt-K0a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zDX-QO-DB4"/>
+            </constraints>
+            <point key="canvasLocation" x="312" y="313"/>
+        </view>
+        <tapGestureRecognizer id="wgO-wE-i0g">
+            <connections>
+                <action selector="back" destination="-1" id="uHe-AA-gai"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

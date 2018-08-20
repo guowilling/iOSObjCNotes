@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '04-block' target in the '04-block' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

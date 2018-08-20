@@ -1,0 +1,47 @@
+//
+//  pch.pch
+//  SRWeibo
+//
+//  Created by 郭伟林 on 15/9/26.
+//  Copyright (c) 2015年 郭伟林. All rights reserved.
+//
+
+#ifndef SR___pch_pch
+#define SR___pch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "SRConst.h"
+
+#define SRColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define SRRandomColor SRColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), 1.0)
+
+#define SRColorBackground     SRColor(215, 215, 215, 1.0)
+#define SRColorCellBackground SRColor(240, 240, 240, 1.0)
+
+#define SRScreenW       [UIScreen mainScreen].bounds.size.width
+#define SRScreenH       [UIScreen mainScreen].bounds.size.height
+#define SRScreenBounds  [UIScreen mainScreen].bounds
+
+#define SRKeyWindow  [UIApplication sharedApplication].keyWindow
+#define SRLastWindow [[UIApplication sharedApplication].windows lastObject]
+
+#define kSystemVersion  [[UIDevice currentDevice].systemVersion floatValue]
+#define IS_iOS10        [[UIDevice currentDevice].systemVersion floatValue] >= 10.0
+
+#ifdef DEBUG // 开发阶段
+#define SRLog(FORMAT, ...) {\
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];\
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];\
+    [dateFormatter setDateFormat:@"HH:mm:ss:SSSS"];\
+    NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];\
+    fprintf(stderr,"[%s:%d %s] %s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [dateString UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
+    }
+#else // 发布阶段
+    #define SRLog(FORMAT, ...) nil
+#endif
+
+#endif

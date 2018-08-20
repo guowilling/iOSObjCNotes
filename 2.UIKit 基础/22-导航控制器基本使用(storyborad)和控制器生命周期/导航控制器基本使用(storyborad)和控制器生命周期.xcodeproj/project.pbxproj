@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090C409F1BAC146B0077D4B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C409E1BAC146B0077D4B3 /* main.m */; };
+		090C40A21BAC146B0077D4B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C40A11BAC146B0077D4B3 /* AppDelegate.m */; };
+		090C40A51BAC146B0077D4B3 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C40A41BAC146B0077D4B3 /* OneViewController.m */; };
+		090C40A81BAC146B0077D4B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090C40A61BAC146B0077D4B3 /* Main.storyboard */; };
+		090C40AA1BAC146B0077D4B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090C40A91BAC146B0077D4B3 /* Images.xcassets */; };
+		090C40AD1BAC146B0077D4B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090C40AB1BAC146B0077D4B3 /* LaunchScreen.xib */; };
+		090C40B91BAC146B0077D4B3 /* __________storyborad_________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C40B81BAC146B0077D4B3 /* __________storyborad_________Tests.m */; };
+		090C40C71BAC164B0077D4B3 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C40C61BAC164B0077D4B3 /* TwoViewController.m */; };
+		090C40CA1BAC16550077D4B3 /* ThrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C40C91BAC16550077D4B3 /* ThrViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090C40B31BAC146B0077D4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090C40911BAC146A0077D4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090C40981BAC146B0077D4B3;
+			remoteInfo = "导航控制器基本使用(storyborad)和控制器生命周期";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090C40991BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "导航控制器基本使用(storyborad)和控制器生命周期.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090C409D1BAC146B0077D4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090C409E1BAC146B0077D4B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090C40A01BAC146B0077D4B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		090C40A11BAC146B0077D4B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		090C40A31BAC146B0077D4B3 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		090C40A41BAC146B0077D4B3 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		090C40A71BAC146B0077D4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090C40A91BAC146B0077D4B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		090C40AC1BAC146B0077D4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		090C40B21BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "导航控制器基本使用(storyborad)和控制器生命周期Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090C40B71BAC146B0077D4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090C40B81BAC146B0077D4B3 /* __________storyborad_________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________storyborad_________Tests.m"; sourceTree = "<group>"; };
+		090C40C51BAC164B0077D4B3 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		090C40C61BAC164B0077D4B3 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		090C40C81BAC16550077D4B3 /* ThrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrViewController.h; sourceTree = "<group>"; };
+		090C40C91BAC16550077D4B3 /* ThrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090C40961BAC146B0077D4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C40AF1BAC146B0077D4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090C40901BAC146A0077D4B3 = {
+			isa = PBXGroup;
+			children = (
+				090C409B1BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期 */,
+				090C40B51BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests */,
+				090C409A1BAC146B0077D4B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090C409A1BAC146B0077D4B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090C40991BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期.app */,
+				090C40B21BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090C409B1BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				090C40A01BAC146B0077D4B3 /* AppDelegate.h */,
+				090C40A11BAC146B0077D4B3 /* AppDelegate.m */,
+				090C40A31BAC146B0077D4B3 /* OneViewController.h */,
+				090C40A41BAC146B0077D4B3 /* OneViewController.m */,
+				090C40C51BAC164B0077D4B3 /* TwoViewController.h */,
+				090C40C61BAC164B0077D4B3 /* TwoViewController.m */,
+				090C40C81BAC16550077D4B3 /* ThrViewController.h */,
+				090C40C91BAC16550077D4B3 /* ThrViewController.m */,
+				090C409C1BAC146B0077D4B3 /* Supporting Files */,
+				090C40A61BAC146B0077D4B3 /* Main.storyboard */,
+				090C40A91BAC146B0077D4B3 /* Images.xcassets */,
+				090C40AB1BAC146B0077D4B3 /* LaunchScreen.xib */,
+			);
+			path = "导航控制器基本使用(storyborad)和控制器生命周期";
+			sourceTree = "<group>";
+		};
+		090C409C1BAC146B0077D4B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090C409D1BAC146B0077D4B3 /* Info.plist */,
+				090C409E1BAC146B0077D4B3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090C40B51BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests */ = {
+			isa = PBXGroup;
+			children = (
+				090C40B81BAC146B0077D4B3 /* __________storyborad_________Tests.m */,
+				090C40B61BAC146B0077D4B3 /* Supporting Files */,
+			);
+			path = "导航控制器基本使用(storyborad)和控制器生命周期Tests";
+			sourceTree = "<group>";
+		};
+		090C40B61BAC146B0077D4B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090C40B71BAC146B0077D4B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090C40981BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090C40BC1BAC146B0077D4B3 /* Build configuration list for PBXNativeTarget "导航控制器基本使用(storyborad)和控制器生命周期" */;
+			buildPhases = (
+				090C40951BAC146B0077D4B3 /* Sources */,
+				090C40961BAC146B0077D4B3 /* Frameworks */,
+				090C40971BAC146B0077D4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "导航控制器基本使用(storyborad)和控制器生命周期";
+			productName = "导航控制器基本使用(storyborad)和控制器生命周期";
+			productReference = 090C40991BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090C40B11BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090C40BF1BAC146B0077D4B3 /* Build configuration list for PBXNativeTarget "导航控制器基本使用(storyborad)和控制器生命周期Tests" */;
+			buildPhases = (
+				090C40AE1BAC146B0077D4B3 /* Sources */,
+				090C40AF1BAC146B0077D4B3 /* Frameworks */,
+				090C40B01BAC146B0077D4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090C40B41BAC146B0077D4B3 /* PBXTargetDependency */,
+			);
+			name = "导航控制器基本使用(storyborad)和控制器生命周期Tests";
+			productName = "导航控制器基本使用(storyborad)和控制器生命周期Tests";
+			productReference = 090C40B21BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090C40911BAC146A0077D4B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "郭伟林";
+				TargetAttributes = {
+					090C40981BAC146B0077D4B3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					090C40B11BAC146B0077D4B3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 090C40981BAC146B0077D4B3;
+					};
+				};
+			};
+			buildConfigurationList = 090C40941BAC146A0077D4B3 /* Build configuration list for PBXProject "导航控制器基本使用(storyborad)和控制器生命周期" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090C40901BAC146A0077D4B3;
+			productRefGroup = 090C409A1BAC146B0077D4B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090C40981BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期 */,
+				090C40B11BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090C40971BAC146B0077D4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C40A81BAC146B0077D4B3 /* Main.storyboard in Resources */,
+				090C40AD1BAC146B0077D4B3 /* LaunchScreen.xib in Resources */,
+				090C40AA1BAC146B0077D4B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C40B01BAC146B0077D4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090C40951BAC146B0077D4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C40A51BAC146B0077D4B3 /* OneViewController.m in Sources */,
+				090C40A21BAC146B0077D4B3 /* AppDelegate.m in Sources */,
+				090C409F1BAC146B0077D4B3 /* main.m in Sources */,
+				090C40CA1BAC16550077D4B3 /* ThrViewController.m in Sources */,
+				090C40C71BAC164B0077D4B3 /* TwoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C40AE1BAC146B0077D4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C40B91BAC146B0077D4B3 /* __________storyborad_________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090C40B41BAC146B0077D4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090C40981BAC146B0077D4B3 /* 导航控制器基本使用(storyborad)和控制器生命周期 */;
+			targetProxy = 090C40B31BAC146B0077D4B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090C40A61BAC146B0077D4B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090C40A71BAC146B0077D4B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090C40AB1BAC146B0077D4B3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090C40AC1BAC146B0077D4B3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090C40BA1BAC146B0077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		090C40BB1BAC146B0077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090C40BD1BAC146B0077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "导航控制器基本使用(storyborad)和控制器生命周期/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		090C40BE1BAC146B0077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "导航控制器基本使用(storyborad)和控制器生命周期/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		090C40C01BAC146B0077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "导航控制器基本使用(storyborad)和控制器生命周期Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/导航控制器基本使用(storyborad)和控制器生命周期.app/导航控制器基本使用(storyborad)和控制器生命周期";
+			};
+			name = Debug;
+		};
+		090C40C11BAC146B0077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "导航控制器基本使用(storyborad)和控制器生命周期Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/导航控制器基本使用(storyborad)和控制器生命周期.app/导航控制器基本使用(storyborad)和控制器生命周期";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090C40941BAC146A0077D4B3 /* Build configuration list for PBXProject "导航控制器基本使用(storyborad)和控制器生命周期" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C40BA1BAC146B0077D4B3 /* Debug */,
+				090C40BB1BAC146B0077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090C40BC1BAC146B0077D4B3 /* Build configuration list for PBXNativeTarget "导航控制器基本使用(storyborad)和控制器生命周期" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C40BD1BAC146B0077D4B3 /* Debug */,
+				090C40BE1BAC146B0077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090C40BF1BAC146B0077D4B3 /* Build configuration list for PBXNativeTarget "导航控制器基本使用(storyborad)和控制器生命周期Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C40C01BAC146B0077D4B3 /* Debug */,
+				090C40C11BAC146B0077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090C40911BAC146A0077D4B3 /* Project object */;
+}

@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090C41D51BACAE050077D4B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41D41BACAE050077D4B3 /* main.m */; };
+		090C41D81BACAE050077D4B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41D71BACAE050077D4B3 /* AppDelegate.m */; };
+		090C41DB1BACAE050077D4B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41DA1BACAE050077D4B3 /* ViewController.m */; };
+		090C41DE1BACAE050077D4B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090C41DC1BACAE050077D4B3 /* Main.storyboard */; };
+		090C41E01BACAE050077D4B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090C41DF1BACAE050077D4B3 /* Images.xcassets */; };
+		090C41E31BACAE050077D4B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090C41E11BACAE050077D4B3 /* LaunchScreen.xib */; };
+		090C41EF1BACAE050077D4B3 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41EE1BACAE050077D4B3 /* ____Tests.m */; };
+		090C41FB1BACB04E0077D4B3 /* GWKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41F91BACB04E0077D4B3 /* GWKeyboardTool.m */; };
+		090C41FC1BACB04E0077D4B3 /* GWKeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090C41FA1BACB04E0077D4B3 /* GWKeyboardTool.xib */; };
+		090C42001BAD2FF30077D4B3 /* GWSexBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C41FE1BAD2FF30077D4B3 /* GWSexBox.m */; };
+		090C42011BAD2FF30077D4B3 /* GWSexBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090C41FF1BAD2FF30077D4B3 /* GWSexBox.xib */; };
+		090C42051BAD33AC0077D4B3 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 090C42041BAD33AC0077D4B3 /* cities.plist */; };
+		090C42131BAD35780077D4B3 /* GWCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C42101BAD35780077D4B3 /* GWCityPicker.m */; };
+		090C42141BAD35780077D4B3 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C42121BAD35780077D4B3 /* Province.m */; };
+		090C42181BAD49680077D4B3 /* GWCityPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090C42171BAD49680077D4B3 /* GWCityPicker.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090C41E91BACAE050077D4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090C41C71BACAE050077D4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090C41CE1BACAE050077D4B3;
+			remoteInfo = "注册界面";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090C41CF1BACAE050077D4B3 /* 注册界面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "注册界面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090C41D31BACAE050077D4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090C41D41BACAE050077D4B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090C41D61BACAE050077D4B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		090C41D71BACAE050077D4B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		090C41D91BACAE050077D4B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		090C41DA1BACAE050077D4B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		090C41DD1BACAE050077D4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090C41DF1BACAE050077D4B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		090C41E21BACAE050077D4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		090C41E81BACAE050077D4B3 /* 注册界面Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "注册界面Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090C41ED1BACAE050077D4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090C41EE1BACAE050077D4B3 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		090C41F81BACB04E0077D4B3 /* GWKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWKeyboardTool.h; sourceTree = "<group>"; };
+		090C41F91BACB04E0077D4B3 /* GWKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWKeyboardTool.m; sourceTree = "<group>"; };
+		090C41FA1BACB04E0077D4B3 /* GWKeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWKeyboardTool.xib; sourceTree = "<group>"; };
+		090C41FD1BAD2FF30077D4B3 /* GWSexBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSexBox.h; sourceTree = "<group>"; };
+		090C41FE1BAD2FF30077D4B3 /* GWSexBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSexBox.m; sourceTree = "<group>"; };
+		090C41FF1BAD2FF30077D4B3 /* GWSexBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSexBox.xib; sourceTree = "<group>"; };
+		090C42041BAD33AC0077D4B3 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		090C420F1BAD35780077D4B3 /* GWCityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCityPicker.h; sourceTree = "<group>"; };
+		090C42101BAD35780077D4B3 /* GWCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCityPicker.m; sourceTree = "<group>"; };
+		090C42111BAD35780077D4B3 /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		090C42121BAD35780077D4B3 /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
+		090C42171BAD49680077D4B3 /* GWCityPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWCityPicker.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090C41CC1BACAE050077D4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C41E51BACAE050077D4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090C41C61BACAE050077D4B3 = {
+			isa = PBXGroup;
+			children = (
+				090C41D11BACAE050077D4B3 /* 注册界面 */,
+				090C41EB1BACAE050077D4B3 /* 注册界面Tests */,
+				090C41D01BACAE050077D4B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090C41D01BACAE050077D4B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090C41CF1BACAE050077D4B3 /* 注册界面.app */,
+				090C41E81BACAE050077D4B3 /* 注册界面Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090C41D11BACAE050077D4B3 /* 注册界面 */ = {
+			isa = PBXGroup;
+			children = (
+				090C42161BAD47EC0077D4B3 /* keyboardtool */,
+				090C42151BAD47E30077D4B3 /* sexbox */,
+				090C420E1BAD35780077D4B3 /* citypicker */,
+				090C41D61BACAE050077D4B3 /* AppDelegate.h */,
+				090C41D71BACAE050077D4B3 /* AppDelegate.m */,
+				090C41D91BACAE050077D4B3 /* ViewController.h */,
+				090C41DA1BACAE050077D4B3 /* ViewController.m */,
+				090C41DC1BACAE050077D4B3 /* Main.storyboard */,
+				090C41DF1BACAE050077D4B3 /* Images.xcassets */,
+				090C41E11BACAE050077D4B3 /* LaunchScreen.xib */,
+				090C41D21BACAE050077D4B3 /* Supporting Files */,
+			);
+			path = "注册界面";
+			sourceTree = "<group>";
+		};
+		090C41D21BACAE050077D4B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090C42041BAD33AC0077D4B3 /* cities.plist */,
+				090C41D31BACAE050077D4B3 /* Info.plist */,
+				090C41D41BACAE050077D4B3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090C41EB1BACAE050077D4B3 /* 注册界面Tests */ = {
+			isa = PBXGroup;
+			children = (
+				090C41EE1BACAE050077D4B3 /* ____Tests.m */,
+				090C41EC1BACAE050077D4B3 /* Supporting Files */,
+			);
+			path = "注册界面Tests";
+			sourceTree = "<group>";
+		};
+		090C41EC1BACAE050077D4B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090C41ED1BACAE050077D4B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090C420E1BAD35780077D4B3 /* citypicker */ = {
+			isa = PBXGroup;
+			children = (
+				090C42111BAD35780077D4B3 /* Province.h */,
+				090C42121BAD35780077D4B3 /* Province.m */,
+				090C420F1BAD35780077D4B3 /* GWCityPicker.h */,
+				090C42101BAD35780077D4B3 /* GWCityPicker.m */,
+				090C42171BAD49680077D4B3 /* GWCityPicker.xib */,
+			);
+			path = citypicker;
+			sourceTree = "<group>";
+		};
+		090C42151BAD47E30077D4B3 /* sexbox */ = {
+			isa = PBXGroup;
+			children = (
+				090C41FD1BAD2FF30077D4B3 /* GWSexBox.h */,
+				090C41FE1BAD2FF30077D4B3 /* GWSexBox.m */,
+				090C41FF1BAD2FF30077D4B3 /* GWSexBox.xib */,
+			);
+			name = sexbox;
+			sourceTree = "<group>";
+		};
+		090C42161BAD47EC0077D4B3 /* keyboardtool */ = {
+			isa = PBXGroup;
+			children = (
+				090C41F81BACB04E0077D4B3 /* GWKeyboardTool.h */,
+				090C41F91BACB04E0077D4B3 /* GWKeyboardTool.m */,
+				090C41FA1BACB04E0077D4B3 /* GWKeyboardTool.xib */,
+			);
+			name = keyboardtool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090C41CE1BACAE050077D4B3 /* 注册界面 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090C41F21BACAE050077D4B3 /* Build configuration list for PBXNativeTarget "注册界面" */;
+			buildPhases = (
+				090C41CB1BACAE050077D4B3 /* Sources */,
+				090C41CC1BACAE050077D4B3 /* Frameworks */,
+				090C41CD1BACAE050077D4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "注册界面";
+			productName = "注册界面";
+			productReference = 090C41CF1BACAE050077D4B3 /* 注册界面.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090C41E71BACAE050077D4B3 /* 注册界面Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090C41F51BACAE050077D4B3 /* Build configuration list for PBXNativeTarget "注册界面Tests" */;
+			buildPhases = (
+				090C41E41BACAE050077D4B3 /* Sources */,
+				090C41E51BACAE050077D4B3 /* Frameworks */,
+				090C41E61BACAE050077D4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090C41EA1BACAE050077D4B3 /* PBXTargetDependency */,
+			);
+			name = "注册界面Tests";
+			productName = "注册界面Tests";
+			productReference = 090C41E81BACAE050077D4B3 /* 注册界面Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090C41C71BACAE050077D4B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "郭伟林";
+				TargetAttributes = {
+					090C41CE1BACAE050077D4B3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					090C41E71BACAE050077D4B3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 090C41CE1BACAE050077D4B3;
+					};
+				};
+			};
+			buildConfigurationList = 090C41CA1BACAE050077D4B3 /* Build configuration list for PBXProject "注册界面" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090C41C61BACAE050077D4B3;
+			productRefGroup = 090C41D01BACAE050077D4B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090C41CE1BACAE050077D4B3 /* 注册界面 */,
+				090C41E71BACAE050077D4B3 /* 注册界面Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090C41CD1BACAE050077D4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C41DE1BACAE050077D4B3 /* Main.storyboard in Resources */,
+				090C41E31BACAE050077D4B3 /* LaunchScreen.xib in Resources */,
+				090C41E01BACAE050077D4B3 /* Images.xcassets in Resources */,
+				090C42051BAD33AC0077D4B3 /* cities.plist in Resources */,
+				090C42011BAD2FF30077D4B3 /* GWSexBox.xib in Resources */,
+				090C41FC1BACB04E0077D4B3 /* GWKeyboardTool.xib in Resources */,
+				090C42181BAD49680077D4B3 /* GWCityPicker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C41E61BACAE050077D4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090C41CB1BACAE050077D4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C42131BAD35780077D4B3 /* GWCityPicker.m in Sources */,
+				090C41DB1BACAE050077D4B3 /* ViewController.m in Sources */,
+				090C42141BAD35780077D4B3 /* Province.m in Sources */,
+				090C41D81BACAE050077D4B3 /* AppDelegate.m in Sources */,
+				090C42001BAD2FF30077D4B3 /* GWSexBox.m in Sources */,
+				090C41D51BACAE050077D4B3 /* main.m in Sources */,
+				090C41FB1BACB04E0077D4B3 /* GWKeyboardTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090C41E41BACAE050077D4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090C41EF1BACAE050077D4B3 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090C41EA1BACAE050077D4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090C41CE1BACAE050077D4B3 /* 注册界面 */;
+			targetProxy = 090C41E91BACAE050077D4B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		090C41DC1BACAE050077D4B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090C41DD1BACAE050077D4B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090C41E11BACAE050077D4B3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090C41E21BACAE050077D4B3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090C41F01BACAE050077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		090C41F11BACAE050077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090C41F31BACAE050077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "注册界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		090C41F41BACAE050077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "注册界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		090C41F61BACAE050077D4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "注册界面Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/注册界面.app/注册界面";
+			};
+			name = Debug;
+		};
+		090C41F71BACAE050077D4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "注册界面Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/注册界面.app/注册界面";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090C41CA1BACAE050077D4B3 /* Build configuration list for PBXProject "注册界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C41F01BACAE050077D4B3 /* Debug */,
+				090C41F11BACAE050077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090C41F21BACAE050077D4B3 /* Build configuration list for PBXNativeTarget "注册界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C41F31BACAE050077D4B3 /* Debug */,
+				090C41F41BACAE050077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090C41F51BACAE050077D4B3 /* Build configuration list for PBXNativeTarget "注册界面Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C41F61BACAE050077D4B3 /* Debug */,
+				090C41F71BACAE050077D4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090C41C71BACAE050077D4B3 /* Project object */;
+}

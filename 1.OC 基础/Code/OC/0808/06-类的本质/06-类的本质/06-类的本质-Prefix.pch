@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '06-类的本质' target in the '06-类的本质' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ssh-B4-dAl">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.29013849209999998" blue="0.27119545950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="F9c-8l-YIE"/>
+                                    <constraint firstAttribute="width" constant="100" id="unF-gT-qpW"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="火影03" translatesAutoresizingMaskIntoConstraints="NO" id="krS-wU-eIc">
+                                <rect key="frame" x="110" y="365" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YrR-iR-t35"/>
+                                    <constraint firstAttribute="width" constant="100" id="aBB-Kh-PWa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.62653300739999995" blue="0.45659450950000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Ssh-B4-dAl" secondAttribute="centerY" id="UMT-u9-OWh"/>
+                            <constraint firstAttribute="centerX" secondItem="krS-wU-eIc" secondAttribute="centerX" id="e6K-nR-2cG"/>
+                            <constraint firstItem="krS-wU-eIc" firstAttribute="top" secondItem="Ssh-B4-dAl" secondAttribute="bottom" constant="31" id="iK0-RU-rQn"/>
+                            <constraint firstAttribute="centerX" secondItem="Ssh-B4-dAl" secondAttribute="centerX" id="xA0-Gr-bhK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="Ssh-B4-dAl" id="45d-6R-vOR"/>
+                        <outlet property="iconView" destination="krS-wU-eIc" id="17o-SD-uiT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.66666666666666" y="294.41333333333336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="火影03" width="200" height="356"/>
+    </resources>
+</document>

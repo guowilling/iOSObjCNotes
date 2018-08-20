@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '05-protoco' target in the '05-protoco' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

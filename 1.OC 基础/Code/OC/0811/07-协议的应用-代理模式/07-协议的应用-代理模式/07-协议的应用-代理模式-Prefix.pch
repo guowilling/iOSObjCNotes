@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '07-协议的应用-代理模式' target in the '07-协议的应用-代理模式' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

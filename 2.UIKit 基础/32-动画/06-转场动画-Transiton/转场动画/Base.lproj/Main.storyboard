@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opJ-ck-Ci9">
+                                <rect key="frame" x="66" y="464" width="45" height="30"/>
+                                <state key="normal" title="上一张">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousBtnClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jY4-zx-SQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-qi-wDK">
+                                <rect key="frame" x="209" y="464" width="45" height="30"/>
+                                <state key="normal" title="下一张">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="INL-Hg-inV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="火影01" translatesAutoresizingMaskIntoConstraints="NO" id="3gr-IX-SXx">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1bb-pz-Bg4"/>
+                                    <constraint firstAttribute="width" constant="300" id="tGb-mq-HkS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="opJ-ck-Ci9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="4BK-iP-lm8"/>
+                            <constraint firstItem="CgY-qi-wDK" firstAttribute="top" secondItem="3gr-IX-SXx" secondAttribute="bottom" constant="30" id="Rkh-rz-EfF"/>
+                            <constraint firstAttribute="centerX" secondItem="3gr-IX-SXx" secondAttribute="centerX" id="bUQ-FC-OMt"/>
+                            <constraint firstItem="opJ-ck-Ci9" firstAttribute="top" secondItem="3gr-IX-SXx" secondAttribute="bottom" constant="30" id="dW3-8T-hbM"/>
+                            <constraint firstAttribute="centerY" secondItem="3gr-IX-SXx" secondAttribute="centerY" id="tBn-Vo-qhy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CgY-qi-wDK" secondAttribute="trailing" constant="50" id="u9L-IH-H9N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3gr-IX-SXx" id="hyw-Fu-9MJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.33333333333334" y="291.57333333333332"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="火影01" width="480" height="854"/>
+    </resources>
+</document>

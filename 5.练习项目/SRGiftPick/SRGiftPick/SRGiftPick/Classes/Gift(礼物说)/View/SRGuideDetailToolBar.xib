@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRGuideDetailToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W47-TB-XeD" userLabel="喜欢">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="0" image="gift_guide_like">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="likeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="G71-Xb-47z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-w8-nzQ" userLabel="分享">
+                    <rect key="frame" x="106.5" y="0.0" width="107" height="44"/>
+                    <state key="normal" title="0" image="gift_guide_share">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9gx-IC-h1k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-jg-fN3" userLabel="评论">
+                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="44"/>
+                    <state key="normal" title="0" image="gift_guide_comment">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commentBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ypU-de-OI8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYT-34-Krc" userLabel="分割线">
+                    <rect key="frame" x="107.5" y="10" width="1" height="24"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="afK-fG-eaT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riA-8X-KhJ" userLabel="分割线">
+                    <rect key="frame" x="214.5" y="10" width="1" height="24"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="ake-dn-yiq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kid-w8-nzQ" firstAttribute="leading" secondItem="W47-TB-XeD" secondAttribute="trailing" id="BuT-Re-fWd"/>
+                <constraint firstItem="JYT-34-Krc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ES1-Fz-cSQ"/>
+                <constraint firstItem="WYY-jg-fN3" firstAttribute="leading" secondItem="Kid-w8-nzQ" secondAttribute="trailing" id="KXw-5y-mbq"/>
+                <constraint firstItem="WYY-jg-fN3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NNc-G5-MBI"/>
+                <constraint firstItem="riA-8X-KhJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="WXf-au-g1a"/>
+                <constraint firstAttribute="bottom" secondItem="WYY-jg-fN3" secondAttribute="bottom" id="ekv-fU-m1k"/>
+                <constraint firstItem="riA-8X-KhJ" firstAttribute="leading" secondItem="Kid-w8-nzQ" secondAttribute="trailing" constant="1" id="f0c-sG-FIg"/>
+                <constraint firstAttribute="bottom" secondItem="riA-8X-KhJ" secondAttribute="bottom" constant="10" id="lRY-wB-REN"/>
+                <constraint firstItem="WYY-jg-fN3" firstAttribute="width" secondItem="W47-TB-XeD" secondAttribute="width" id="lkK-k1-Zug"/>
+                <constraint firstItem="W47-TB-XeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s1X-zR-s08"/>
+                <constraint firstItem="WYY-jg-fN3" firstAttribute="width" secondItem="Kid-w8-nzQ" secondAttribute="width" id="seC-aL-0ZX"/>
+                <constraint firstAttribute="trailing" secondItem="WYY-jg-fN3" secondAttribute="trailing" id="u2n-UI-H0i"/>
+                <constraint firstAttribute="bottom" secondItem="JYT-34-Krc" secondAttribute="bottom" constant="10" id="uD4-Ws-jA7"/>
+                <constraint firstAttribute="bottom" secondItem="W47-TB-XeD" secondAttribute="bottom" id="vL1-HS-x3u"/>
+                <constraint firstItem="W47-TB-XeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wXD-zB-7tb"/>
+                <constraint firstItem="Kid-w8-nzQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xFp-uZ-EL9"/>
+                <constraint firstItem="W47-TB-XeD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y4H-rb-JI6"/>
+                <constraint firstItem="JYT-34-Krc" firstAttribute="leading" secondItem="W47-TB-XeD" secondAttribute="trailing" constant="1" id="ynJ-bY-ogM"/>
+                <constraint firstAttribute="bottom" secondItem="Kid-w8-nzQ" secondAttribute="bottom" id="yoq-Qb-et3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="s1X-zR-s08"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="commentBtn" destination="WYY-jg-fN3" id="QyN-BI-GM3"/>
+                <outlet property="likeBtn" destination="W47-TB-XeD" id="Hwq-Dx-6es"/>
+                <outlet property="shareBtn" destination="Kid-w8-nzQ" id="hJ4-hA-qkA"/>
+            </connections>
+            <point key="canvasLocation" x="-305" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gift_guide_comment" width="32" height="32"/>
+        <image name="gift_guide_like" width="32" height="32"/>
+        <image name="gift_guide_share" width="32" height="32"/>
+    </resources>
+</document>

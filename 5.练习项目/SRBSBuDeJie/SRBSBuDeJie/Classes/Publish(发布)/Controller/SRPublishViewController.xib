@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SRPublishViewController">
+            <connections>
+                <outlet property="buttonsContainer" destination="aNb-Kk-gxf" id="Awe-uL-QbD"/>
+                <outlet property="sloganView" destination="Bge-ek-qFY" id="Lfn-iQ-wus"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5nh-cv-GP2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="Bge-ek-qFY">
+                    <rect key="frame" x="87.5" y="100" width="200" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Cco-sa-7Pb"/>
+                        <constraint firstAttribute="width" constant="200" id="kfx-vj-psY"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE8-d6-lHk" userLabel="取消">
+                    <rect key="frame" x="62.5" y="587" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="pZg-TO-tQk"/>
+                        <constraint firstAttribute="height" constant="40" id="wlw-MQ-UKM"/>
+                    </constraints>
+                    <state key="normal" image="shareButtonCancel">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="shareButtonCancelClick"/>
+                    <connections>
+                        <action selector="cancelBtnOnClick:" destination="-1" eventType="touchUpInside" id="Dy0-zj-JOA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-Kk-gxf" userLabel="btnsContainer">
+                    <rect key="frame" x="0.0" y="208.5" width="375" height="250"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFS-fq-xbk" customClass="SRVerticalButton">
+                            <rect key="frame" x="20" y="15" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="y2C-Cr-7f6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发视频" image="publish-video">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFh-Q6-7wQ" customClass="SRVerticalButton">
+                            <rect key="frame" x="151.5" y="15" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="WVb-EK-RlS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发图片" image="publish-picture">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5i-hu-5NV" customClass="SRVerticalButton">
+                            <rect key="frame" x="283" y="15" width="72" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="Jfm-xs-GbP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发文字" image="publish-text">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH5-Ui-TFL" customClass="SRVerticalButton">
+                            <rect key="frame" x="20" y="125" width="72" height="110"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发音频" image="publish-audio">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77b-fv-ezV" customClass="SRVerticalButton">
+                            <rect key="frame" x="283" y="125" width="72" height="110"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="离线下载" image="publish-offline">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMI-f4-Xfa" customClass="SRVerticalButton">
+                            <rect key="frame" x="151.5" y="125" width="72" height="110"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="审贴" image="publish-review">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="OFS-fq-xbk" firstAttribute="top" secondItem="aNb-Kk-gxf" secondAttribute="top" constant="15" id="4Cq-s5-BGa"/>
+                        <constraint firstItem="KMI-f4-Xfa" firstAttribute="top" secondItem="FFh-Q6-7wQ" secondAttribute="bottom" id="5Gm-T2-gAp"/>
+                        <constraint firstItem="FFh-Q6-7wQ" firstAttribute="width" secondItem="KMI-f4-Xfa" secondAttribute="width" id="5on-bW-xkP"/>
+                        <constraint firstItem="UH5-Ui-TFL" firstAttribute="leading" secondItem="aNb-Kk-gxf" secondAttribute="leading" constant="20" id="9qp-pQ-HEh"/>
+                        <constraint firstItem="OFS-fq-xbk" firstAttribute="leading" secondItem="aNb-Kk-gxf" secondAttribute="leading" constant="20" id="B8M-ZW-P4a"/>
+                        <constraint firstItem="FFh-Q6-7wQ" firstAttribute="height" secondItem="KMI-f4-Xfa" secondAttribute="height" id="CC7-b4-LM2"/>
+                        <constraint firstItem="UH5-Ui-TFL" firstAttribute="top" secondItem="OFS-fq-xbk" secondAttribute="bottom" id="EFL-we-cUz"/>
+                        <constraint firstAttribute="bottom" secondItem="KMI-f4-Xfa" secondAttribute="bottom" constant="15" id="FON-Cf-Aa3"/>
+                        <constraint firstAttribute="bottom" secondItem="UH5-Ui-TFL" secondAttribute="bottom" constant="15" id="HMT-h3-GgK"/>
+                        <constraint firstItem="FFh-Q6-7wQ" firstAttribute="centerX" secondItem="KMI-f4-Xfa" secondAttribute="centerX" id="JS7-As-kHW"/>
+                        <constraint firstAttribute="centerX" secondItem="FFh-Q6-7wQ" secondAttribute="centerX" id="JxR-k5-0wW"/>
+                        <constraint firstItem="OFS-fq-xbk" firstAttribute="width" secondItem="UH5-Ui-TFL" secondAttribute="width" id="LaZ-y0-B8C"/>
+                        <constraint firstAttribute="trailing" secondItem="F5i-hu-5NV" secondAttribute="trailing" constant="20" id="M0G-fW-pPN"/>
+                        <constraint firstItem="F5i-hu-5NV" firstAttribute="width" secondItem="77b-fv-ezV" secondAttribute="width" id="Pxo-UW-c3N"/>
+                        <constraint firstAttribute="bottom" secondItem="77b-fv-ezV" secondAttribute="bottom" constant="15" id="dAZ-yF-vNQ"/>
+                        <constraint firstItem="F5i-hu-5NV" firstAttribute="top" secondItem="aNb-Kk-gxf" secondAttribute="top" constant="15" id="lxy-k6-XGR"/>
+                        <constraint firstItem="77b-fv-ezV" firstAttribute="top" secondItem="F5i-hu-5NV" secondAttribute="bottom" id="nm8-66-GzD"/>
+                        <constraint firstItem="F5i-hu-5NV" firstAttribute="centerX" secondItem="77b-fv-ezV" secondAttribute="centerX" id="ooa-zw-7yO"/>
+                        <constraint firstItem="F5i-hu-5NV" firstAttribute="height" secondItem="77b-fv-ezV" secondAttribute="height" id="pHa-4T-F6g"/>
+                        <constraint firstItem="FFh-Q6-7wQ" firstAttribute="top" secondItem="aNb-Kk-gxf" secondAttribute="top" constant="15" id="ueu-8X-F9Z"/>
+                        <constraint firstAttribute="height" constant="250" id="wDn-MC-DW8"/>
+                        <constraint firstItem="OFS-fq-xbk" firstAttribute="height" secondItem="UH5-Ui-TFL" secondAttribute="height" id="zwb-Ha-zhL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5nh-cv-GP2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3if-Ie-AU6"/>
+                <constraint firstItem="5nh-cv-GP2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8TL-eq-xcR"/>
+                <constraint firstAttribute="bottom" secondItem="JE8-d6-lHk" secondAttribute="bottom" constant="40" id="8r0-l8-AuZ"/>
+                <constraint firstAttribute="bottom" secondItem="5nh-cv-GP2" secondAttribute="bottom" id="INL-Dv-UeP"/>
+                <constraint firstAttribute="centerX" secondItem="JE8-d6-lHk" secondAttribute="centerX" id="LDU-q9-TS1"/>
+                <constraint firstItem="aNb-Kk-gxf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QEm-Pm-uXW"/>
+                <constraint firstAttribute="centerY" secondItem="aNb-Kk-gxf" secondAttribute="centerY" id="rkg-7c-b5t"/>
+                <constraint firstItem="Bge-ek-qFY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="soT-qW-5Rp"/>
+                <constraint firstAttribute="trailing" secondItem="5nh-cv-GP2" secondAttribute="trailing" id="vMd-IF-7so"/>
+                <constraint firstAttribute="trailing" secondItem="aNb-Kk-gxf" secondAttribute="trailing" id="w90-ke-Bpu"/>
+                <constraint firstAttribute="centerX" secondItem="Bge-ek-qFY" secondAttribute="centerX" id="wHt-oq-CZ9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_slogan" width="202" height="20"/>
+        <image name="publish-audio" width="72" height="72"/>
+        <image name="publish-offline" width="72" height="72"/>
+        <image name="publish-picture" width="72" height="72"/>
+        <image name="publish-review" width="72" height="72"/>
+        <image name="publish-text" width="72" height="72"/>
+        <image name="publish-video" width="72" height="72"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
+</document>

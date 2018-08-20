@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tagRecommendCell" id="eHw-hk-CU5" customClass="SRTagRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eHw-hk-CU5" id="rat-VO-q6h">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5KW-B7-DRO">
+                        <rect key="frame" x="18" y="24" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="clS-cB-fgd"/>
+                            <constraint firstAttribute="height" constant="50" id="t7g-3D-whQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAS-zc-Jei">
+                        <rect key="frame" x="78" y="27" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQR-tn-11F">
+                        <rect key="frame" x="78" y="54" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-N4-zXr">
+                        <rect key="frame" x="252" y="37" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="GCw-cQ-1yz"/>
+                            <constraint firstAttribute="width" constant="50" id="rCv-D3-cDZ"/>
+                        </constraints>
+                        <state key="normal" title="+ 订阅" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.17648835490399706" blue="0.090395941830336501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="wAG-N4-zXr" secondAttribute="trailing" constant="10" id="7Kj-hu-yVL"/>
+                    <constraint firstItem="NAS-zc-Jei" firstAttribute="top" secondItem="5KW-B7-DRO" secondAttribute="top" constant="3" id="Cq9-iN-4ou"/>
+                    <constraint firstAttribute="centerY" secondItem="wAG-N4-zXr" secondAttribute="centerY" id="IhW-XK-CFW"/>
+                    <constraint firstItem="NAS-zc-Jei" firstAttribute="leading" secondItem="5KW-B7-DRO" secondAttribute="trailing" constant="10" id="KAJ-pC-NxZ"/>
+                    <constraint firstItem="kQR-tn-11F" firstAttribute="leading" secondItem="NAS-zc-Jei" secondAttribute="leading" id="SNH-mC-LzT"/>
+                    <constraint firstAttribute="centerY" secondItem="5KW-B7-DRO" secondAttribute="centerY" id="bLM-1d-489"/>
+                    <constraint firstItem="5KW-B7-DRO" firstAttribute="leading" secondItem="rat-VO-q6h" secondAttribute="leadingMargin" constant="10" id="xVq-Jv-wOq"/>
+                    <constraint firstItem="kQR-tn-11F" firstAttribute="bottom" secondItem="5KW-B7-DRO" secondAttribute="bottom" constant="-3" id="zIh-ov-UxK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image_list" destination="5KW-B7-DRO" id="D4l-a3-A0V"/>
+                <outlet property="sub_number_label" destination="kQR-tn-11F" id="fy0-DV-Sow"/>
+                <outlet property="theme_name_label" destination="NAS-zc-Jei" id="6q2-Z2-xHC"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="211"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+    </resources>
+</document>

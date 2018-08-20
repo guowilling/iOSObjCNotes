@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		189365E517B47BD600A6E5D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189365E417B47BD600A6E5D0 /* Foundation.framework */; };
+		189365E817B47BD600A6E5D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189365E717B47BD600A6E5D0 /* main.m */; };
+		189365EC17B47BD600A6E5D0 /* _1___________.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189365EB17B47BD600A6E5D0 /* _1___________.1 */; };
+		189365F417B47BEA00A6E5D0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 189365F317B47BEA00A6E5D0 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		189365DE17B47BD600A6E5D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				189365EC17B47BD600A6E5D0 /* _1___________.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		189365E017B47BD600A6E5D0 /* 01-引用计数器的基本操作 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-引用计数器的基本操作"; sourceTree = BUILT_PRODUCTS_DIR; };
+		189365E417B47BD600A6E5D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		189365E717B47BD600A6E5D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189365EA17B47BD600A6E5D0 /* 01-引用计数器的基本操作-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01-引用计数器的基本操作-Prefix.pch"; sourceTree = "<group>"; };
+		189365EB17B47BD600A6E5D0 /* _1___________.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "_1___________.1"; sourceTree = "<group>"; };
+		189365F217B47BEA00A6E5D0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		189365F317B47BEA00A6E5D0 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189365DD17B47BD600A6E5D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189365E517B47BD600A6E5D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189365D517B47BD600A6E5D0 = {
+			isa = PBXGroup;
+			children = (
+				189365E617B47BD600A6E5D0 /* 01-引用计数器的基本操作 */,
+				189365E317B47BD600A6E5D0 /* Frameworks */,
+				189365E117B47BD600A6E5D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		189365E117B47BD600A6E5D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189365E017B47BD600A6E5D0 /* 01-引用计数器的基本操作 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189365E317B47BD600A6E5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189365E417B47BD600A6E5D0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189365E617B47BD600A6E5D0 /* 01-引用计数器的基本操作 */ = {
+			isa = PBXGroup;
+			children = (
+				189365E717B47BD600A6E5D0 /* main.m */,
+				189365EB17B47BD600A6E5D0 /* _1___________.1 */,
+				189365E917B47BD600A6E5D0 /* Supporting Files */,
+				189365F217B47BEA00A6E5D0 /* Person.h */,
+				189365F317B47BEA00A6E5D0 /* Person.m */,
+			);
+			path = "01-引用计数器的基本操作";
+			sourceTree = "<group>";
+		};
+		189365E917B47BD600A6E5D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189365EA17B47BD600A6E5D0 /* 01-引用计数器的基本操作-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189365DF17B47BD600A6E5D0 /* 01-引用计数器的基本操作 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189365EF17B47BD600A6E5D0 /* Build configuration list for PBXNativeTarget "01-引用计数器的基本操作" */;
+			buildPhases = (
+				189365DC17B47BD600A6E5D0 /* Sources */,
+				189365DD17B47BD600A6E5D0 /* Frameworks */,
+				189365DE17B47BD600A6E5D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-引用计数器的基本操作";
+			productName = "01-引用计数器的基本操作";
+			productReference = 189365E017B47BD600A6E5D0 /* 01-引用计数器的基本操作 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189365D717B47BD600A6E5D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = itcast;
+			};
+			buildConfigurationList = 189365DA17B47BD600A6E5D0 /* Build configuration list for PBXProject "01-引用计数器的基本操作" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 189365D517B47BD600A6E5D0;
+			productRefGroup = 189365E117B47BD600A6E5D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189365DF17B47BD600A6E5D0 /* 01-引用计数器的基本操作 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189365DC17B47BD600A6E5D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189365E817B47BD600A6E5D0 /* main.m in Sources */,
+				189365F417B47BEA00A6E5D0 /* Person.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		189365ED17B47BD600A6E5D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		189365EE17B47BD600A6E5D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		189365F017B47BD600A6E5D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "01-引用计数器的基本操作/01-引用计数器的基本操作-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		189365F117B47BD600A6E5D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "01-引用计数器的基本操作/01-引用计数器的基本操作-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189365DA17B47BD600A6E5D0 /* Build configuration list for PBXProject "01-引用计数器的基本操作" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189365ED17B47BD600A6E5D0 /* Debug */,
+				189365EE17B47BD600A6E5D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189365EF17B47BD600A6E5D0 /* Build configuration list for PBXNativeTarget "01-引用计数器的基本操作" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189365F017B47BD600A6E5D0 /* Debug */,
+				189365F117B47BD600A6E5D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189365D717B47BD600A6E5D0 /* Project object */;
+}

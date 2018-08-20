@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '06-模型设计练习' target in the '06-模型设计练习' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

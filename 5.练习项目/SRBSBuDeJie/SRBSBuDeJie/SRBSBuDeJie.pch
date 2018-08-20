@@ -1,0 +1,53 @@
+//
+//  SRBSBudejie.pch
+//  SRBSBudejie
+//
+//  Created by 郭伟林 on 15/10/17.
+//  Copyright (c) 2015年 郭伟林. All rights reserved.
+//
+
+#ifndef SR______SR______pch
+#define SR______SR______pch
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "SRVerticalButton.h"
+
+#define SRKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define SRCaches [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+#define SRPathCache(path) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:(path)]
+
+#define SRRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define SRRandomColor SRRGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#define SRBackgroundColor      SRRGBColor(235, 235, 245)
+#define SRThemeColor           SRRGBColor(245, 75, 75)
+
+#define SRScreenW [UIScreen mainScreen].bounds.size.width
+#define SRScreenH [UIScreen mainScreen].bounds.size.height
+#define SRScreenBounds [UIScreen mainScreen].bounds
+
+#ifdef DEBUG
+#define SRLog(FORMAT, ...) {\
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+[dateFormatter setDateStyle:NSDateFormatterMediumStyle];\
+[dateFormatter setTimeStyle:NSDateFormatterShortStyle];\
+[dateFormatter setDateFormat:@"HH:mm:ss:SSSS"];\
+NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];\
+fprintf(stderr,"[%s:%d %s] %s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [dateString UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
+}
+#else
+#define SRLog(FORMAT, ...) nil
+#endif
+
+#endif

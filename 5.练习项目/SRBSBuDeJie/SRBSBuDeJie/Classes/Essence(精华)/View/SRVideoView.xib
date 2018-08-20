@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fPq-or-lwJ" customClass="SRVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-3P-Vfk" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="400" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="wL3-P7-BCP"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKf-6s-mai" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-7z-il6" userLabel="进度条" customClass="SRProgressView">
+                    <rect key="frame" x="150" y="100" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3k2-Vz-VJz"/>
+                        <constraint firstAttribute="width" constant="100" id="XZH-jX-ieY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQd-rn-xem" userLabel="播放">
+                    <rect key="frame" x="175" y="125" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Eg0-5d-gM2"/>
+                        <constraint firstAttribute="width" constant="50" id="WoY-dy-Ny1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sKf-6s-mai" firstAttribute="top" secondItem="fPq-or-lwJ" secondAttribute="top" id="4O7-k6-T7v"/>
+                <constraint firstItem="sKf-6s-mai" firstAttribute="leading" secondItem="fPq-or-lwJ" secondAttribute="leading" id="EHc-ZI-wqY"/>
+                <constraint firstAttribute="centerX" secondItem="IQd-rn-xem" secondAttribute="centerX" id="HXx-Sv-BRI"/>
+                <constraint firstAttribute="trailing" secondItem="sKf-6s-mai" secondAttribute="trailing" id="O8P-ee-0D5"/>
+                <constraint firstAttribute="trailing" secondItem="Q38-3P-Vfk" secondAttribute="trailing" id="QQm-PX-5DN"/>
+                <constraint firstAttribute="centerY" secondItem="fGW-7z-il6" secondAttribute="centerY" id="THH-9X-3t9"/>
+                <constraint firstItem="Q38-3P-Vfk" firstAttribute="leading" secondItem="fPq-or-lwJ" secondAttribute="leading" id="Vse-l3-0wI"/>
+                <constraint firstAttribute="centerY" secondItem="IQd-rn-xem" secondAttribute="centerY" id="Xg7-WX-d1c"/>
+                <constraint firstAttribute="centerX" secondItem="fGW-7z-il6" secondAttribute="centerX" id="Zqm-Wh-f7M"/>
+                <constraint firstItem="Q38-3P-Vfk" firstAttribute="top" secondItem="fPq-or-lwJ" secondAttribute="top" constant="20" id="cty-Ys-uvE"/>
+                <constraint firstAttribute="bottom" secondItem="sKf-6s-mai" secondAttribute="bottom" id="vI3-Oj-8mo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="sKf-6s-mai" id="RoY-Z1-rF2"/>
+                <outlet property="progressView" destination="fGW-7z-il6" id="pae-tB-dWB"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

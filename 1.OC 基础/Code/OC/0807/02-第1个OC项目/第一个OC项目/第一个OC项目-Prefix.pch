@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '第一个OC项目' target in the '第一个OC项目' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

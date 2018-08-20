@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg" translatesAutoresizingMaskIntoConstraints="NO" id="H6G-eC-ybH">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-rw-x7r" customClass="LockView">
+                                <rect key="frame" x="0.0" y="109" width="320" height="350"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="iTb-Gu-uHJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fWE-rw-x7r" secondAttribute="centerX" id="2xT-tN-beN"/>
+                            <constraint firstItem="H6G-eC-ybH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="4bW-RJ-TnK"/>
+                            <constraint firstItem="H6G-eC-ybH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="P1f-JI-07l"/>
+                            <constraint firstAttribute="trailing" secondItem="H6G-eC-ybH" secondAttribute="trailing" id="Tht-cQ-oAc"/>
+                            <constraint firstAttribute="trailing" secondItem="fWE-rw-x7r" secondAttribute="trailing" id="fnC-6S-R5I"/>
+                            <constraint firstAttribute="centerY" secondItem="fWE-rw-x7r" secondAttribute="centerY" id="kDr-FY-r81"/>
+                            <constraint firstItem="fWE-rw-x7r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="p3H-4h-Nw6"/>
+                            <constraint firstAttribute="bottom" secondItem="H6G-eC-ybH" secondAttribute="bottom" id="q15-FM-Z7a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lockView" destination="fWE-rw-x7r" id="MPt-bW-3Kc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.33333333333334" y="291.57333333333332"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg" width="640" height="1008"/>
+    </resources>
+</document>

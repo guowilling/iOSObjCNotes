@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRChoicenessHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hd-Uw-Kp1" customClass="SRPageScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="WTS-AM-Iry"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfB-IR-QLG" userLabel="按钮容器">
+                    <rect key="frame" x="0.0" y="140" width="320" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KfB-IR-QLG" firstAttribute="top" secondItem="6Hd-Uw-Kp1" secondAttribute="bottom" id="9c1-Ll-FXD"/>
+                <constraint firstAttribute="trailing" secondItem="6Hd-Uw-Kp1" secondAttribute="trailing" id="B41-IP-XqT"/>
+                <constraint firstItem="6Hd-Uw-Kp1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DRQ-Ec-kSJ"/>
+                <constraint firstAttribute="bottom" secondItem="KfB-IR-QLG" secondAttribute="bottom" id="M0f-d1-E3R"/>
+                <constraint firstItem="6Hd-Uw-Kp1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NmG-PX-zzx"/>
+                <constraint firstItem="KfB-IR-QLG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RAX-0Y-b1F"/>
+                <constraint firstAttribute="trailing" secondItem="KfB-IR-QLG" secondAttribute="trailing" id="qti-Pc-JEZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonsContainer" destination="KfB-IR-QLG" id="YCY-ND-u3r"/>
+                <outlet property="pageScrollView" destination="6Hd-Uw-Kp1" id="AT5-CW-rNq"/>
+            </connections>
+            <point key="canvasLocation" x="382" y="264"/>
+        </view>
+    </objects>
+</document>

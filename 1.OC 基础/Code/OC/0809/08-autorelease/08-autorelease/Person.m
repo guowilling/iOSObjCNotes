@@ -1,0 +1,17 @@
+/*
+ 作者：MJ
+ 描述：
+ 时间：
+ 文件名：Person.m
+ */
+
+#import "Person.h"
+
+@implementation Person
+- (void)dealloc
+{
+    NSLog(@"Person---dealloc");
+    
+    [super dealloc];
+}
+@end

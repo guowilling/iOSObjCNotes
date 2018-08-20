@@ -1,0 +1,45 @@
+//
+//  GiftPick.pch
+//  SRGiftPick
+//
+//  Created by 郭伟林 on 15/10/4.
+//  Copyright (c) 2015年 郭伟林. All rights reserved.
+//
+
+#ifndef SRGiftPick_GiftPick_pch
+#define SRGiftPick_GiftPick_pch
+
+#import "UIBarButtonItem+Extension.h"
+#import "SRConst.h"
+#import "UIView+Extension.h"
+#import "UIColor+Extension.h"
+#import "NSString+Extension.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#pragma mark - Frame
+
+#define SRScreenW [UIScreen mainScreen].bounds.size.width
+#define SRScreenH [UIScreen mainScreen].bounds.size.height
+#define SRScreenBounds [UIScreen mainScreen].bounds
+
+#pragma mark - Color
+
+#define SRRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define SRRandomColor SRRGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#define SRBackgroundColor SRRGBColor(235, 235, 235)
+#define SRThemeColor SRRGBColor(245, 75, 75)
+
+#ifdef DEBUG // 开发阶段
+#define SRLog(...) NSLog(__VA_ARGS__)
+#else // 发布阶段
+#define SRLog(...)
+#endif
+
+#endif

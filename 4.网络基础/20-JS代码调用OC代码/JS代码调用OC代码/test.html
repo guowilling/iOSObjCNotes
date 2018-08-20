@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p></p>
+    <div>
+        <button onclick="fn_open_camera();">拍照</button>
+    </div>
+    <p></p>
+    <div>
+        <button onclick="fn_call();">打电话</button>
+    </div>
+    
+<script>
+    function fn_call() {
+        window.location.href = 'sr://call'; // 改变地址重新发送一个请求, 调用 OC 中的 call 方法
+    }
+
+    function fn_open_camera() {
+        window.location.href = 'sr://openCamera'; // 改变地址重新发送一个请求, 调用 OC 中的 openCamera 方法
+    }
+</script>
+</body>
+</html>

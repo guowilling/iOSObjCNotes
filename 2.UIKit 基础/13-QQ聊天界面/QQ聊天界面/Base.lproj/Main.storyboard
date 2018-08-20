@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fXR-Xs-1eX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="IC0-X9-6KB">
+            <objects>
+                <viewController id="fXR-Xs-1eX" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iL7-DK-f9E"/>
+                        <viewControllerLayoutGuide type="bottom" id="bfx-g9-usk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="seY-Sc-oDd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rUJ-pH-FvZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fXR-Xs-1eX" id="1tn-zO-5t6"/>
+                                    <outlet property="delegate" destination="fXR-Xs-1eX" id="Qz2-aO-sUD"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWS-Fq-Ssi">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bottom_bg" translatesAutoresizingMaskIntoConstraints="NO" id="LAE-LM-Asx">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECy-44-2n3">
+                                        <rect key="frame" x="272" y="6" width="40" height="36"/>
+                                        <state key="normal" image="chat_bottom_smile_nor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWl-Md-raB">
+                                        <rect key="frame" x="8" y="8" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnP-su-RoC">
+                                        <rect key="frame" x="236" y="7" width="40" height="34"/>
+                                        <state key="normal" image="chat_bottom_voice_nor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LAE-LM-Asx" firstAttribute="leading" secondItem="jWS-Fq-Ssi" secondAttribute="leading" id="Ufq-9I-P9v"/>
+                                    <constraint firstItem="LAE-LM-Asx" firstAttribute="top" secondItem="jWS-Fq-Ssi" secondAttribute="top" id="cDN-pa-uXi"/>
+                                    <constraint firstAttribute="trailing" secondItem="LAE-LM-Asx" secondAttribute="trailing" id="hN1-Vd-CqW"/>
+                                    <constraint firstAttribute="bottom" secondItem="LAE-LM-Asx" secondAttribute="bottom" id="tNB-cu-yby"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jWS-Fq-Ssi" secondAttribute="trailing" constant="-16" id="4Gv-ka-al0"/>
+                            <constraint firstItem="rUJ-pH-FvZ" firstAttribute="top" secondItem="seY-Sc-oDd" secondAttribute="topMargin" id="GBZ-Tc-8Tl"/>
+                            <constraint firstItem="bfx-g9-usk" firstAttribute="top" secondItem="rUJ-pH-FvZ" secondAttribute="bottom" constant="44" id="Oqw-Sk-H8z"/>
+                            <constraint firstItem="bfx-g9-usk" firstAttribute="top" secondItem="jWS-Fq-Ssi" secondAttribute="bottom" id="SC0-PI-4QX"/>
+                            <constraint firstItem="jWS-Fq-Ssi" firstAttribute="top" secondItem="rUJ-pH-FvZ" secondAttribute="bottom" id="UPl-ax-JJA"/>
+                            <constraint firstAttribute="trailing" secondItem="rUJ-pH-FvZ" secondAttribute="trailing" id="VPB-AZ-FUI"/>
+                            <constraint firstItem="rUJ-pH-FvZ" firstAttribute="leading" secondItem="seY-Sc-oDd" secondAttribute="leading" id="dAx-xl-7Vt"/>
+                            <constraint firstItem="rUJ-pH-FvZ" firstAttribute="top" secondItem="iL7-DK-f9E" secondAttribute="bottom" id="dRm-Xi-LI4"/>
+                            <constraint firstItem="jWS-Fq-Ssi" firstAttribute="leading" secondItem="seY-Sc-oDd" secondAttribute="leadingMargin" constant="-16" id="kW3-1D-ILg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dRm-Xi-LI4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="fWl-Md-raB" id="ZNp-xN-I2G"/>
+                        <outlet property="tableView" destination="rUJ-pH-FvZ" id="D4S-dt-9Nv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scG-AA-JOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_bottom_bg" width="10" height="42"/>
+        <image name="chat_bottom_smile_nor" width="34" height="34"/>
+        <image name="chat_bottom_voice_nor" width="34" height="34"/>
+    </resources>
+</document>

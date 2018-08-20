@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '01-arc的基本使用' target in the '01-arc的基本使用' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
