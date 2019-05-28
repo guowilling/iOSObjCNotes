@@ -815,7 +815,6 @@
 				6850769A1F1F396300A27DE9 /* SRConst.m */,
 				685076771F1F396300A27DE9 /* Models */,
 				6850767A1F1F396300A27DE9 /* ViewControllers */,
-				685076831F1F396300A27DE9 /* ViewModels */,
 				685076841F1F396300A27DE9 /* Views */,
 			);
 			path = Main;
@@ -843,13 +842,6 @@
 				685076801F1F396300A27DE9 /* SROAuthViewController.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		685076831F1F396300A27DE9 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		685076841F1F396300A27DE9 /* Views */ = {
